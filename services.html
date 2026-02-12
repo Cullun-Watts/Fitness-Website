@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Performance | Bespoke Health & Fitness</title>
+    <style>
+        :root {
+            --copper: #B87333;
+            --steel-blue: #4682B4;
+            --slate-gray: #708090;
+            --warm-taupe: #8B7D6B;
+            --mushroom-gray: #A0877D;
+            --off-white: #F9F7F5;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--off-white);
+            color: var(--slate-gray);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--copper);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: var(--slate-gray);
+        }
+
+        .logo span {
+            color: var(--copper);
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), var(--mushroom-gray);
+            color: white;
+            padding: 120px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn-primary {
+            background-color: var(--copper);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 2px; /* Sharper edges for a modern/tech feel */
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary:hover {
+            background-color: #965a28;
+            transform: translateY(-2px);
+        }
+
+        .section {
+            padding: 100px 10%;
+        }
+
+        .section h2 {
+            color: var(--steel-blue);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #about {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 0;
+            border-left: 4px solid var(--steel-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-left-color: var(--copper);
+        }
+
+        .card h3 {
+            color: var(--slate-gray);
+            margin-top: 0;
+        }
+
+        .testimonials {
+            background-color: var(--warm-taupe);
+            color: white;
+            text-align: center;
+        }
+
+        .testimonial-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: var(--slate-gray);
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">[YOUR NAME] <span>COACHING</span></div>
+        <nav>
+            <a href="#about" style="margin-left:20px; text-decoration:none; color:var(--slate-gray); font-weight:500;">BIO</a>
+            <a href="#services" style="margin-left:20px; text-decoration:none; color:var(--slate-gray); font-weight:500;">SERVICES</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>ELEVATE YOUR POTENTIAL</h1>
+        <p>Expert-led fitness coaching for high-performers. We merge the science of physiology with the art of sustainable habit change.</p>
+        <a href="mailto:your@email.com" class="btn-primary">Inquire for 2026</a>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-content">
+            <h2>The Artisanal Approach to Fitness</h2>
+            <p><strong>MY BACKGROUND:</strong> [Insert your certifications and years of experience here. e.g., With over 10 years in the industry...]</p>
+            <p>[Insert your personal philosophy here. Why do you do this? What makes your training "crafted" and "artisanal"? Talk about your transition from standard training to a more intelligent, tech-integrated approach.]</p>
+        </div>
+    </section>
+
+    <section id="services" class="section" style="background: #F0F2F4;">
+        <h2>Services & Methodology</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Bespoke Programming</h3>
+                <p>Not a generic PDF. You get a living, breathing program that evolves as your data does.</p>
+            </div>
+            <div class="card">
+                <h3>Metabolic Coaching</h3>
+                <p>Advanced nutrition strategies designed to optimize your hormones, energy, and body composition.</p>
+            </div>
+            <div class="card">
+                <h3>Biometric Tracking</h3>
+                <p>We look at the numbers—steps, sleep, and recovery—to ensure you never overtrain or plateau.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <div class="testimonial-text">
+            "The level of detail and sophistication in this program is unlike anything I've ever experienced. It's not just a workout; it's an education."
+        </div>
+        <p style="margin-top:20px; opacity: 0.8;">— [CLIENT NAME/ACHIEVEMENT]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [YOUR NAME] COACHING | ESTABLISHED FOR EXCELLENCE</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Modern. Intelligent. Crafted.</p>
+    </footer>
+
+</body>
+</html>
